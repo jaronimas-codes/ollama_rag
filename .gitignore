@@ -1,0 +1,9 @@
+*.pyc
+.DS_Store
+chroma/
+chatbot_venv/
+.env
+data/
+
+
+
