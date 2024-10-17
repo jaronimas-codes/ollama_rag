@@ -1,5 +1,6 @@
 # Project Setup Guide
 
+This project is based on [this](https://www.youtube.com/watch?v=2TJxpyO3ei4&t=932s) tutorial, however dependencies were updated and fully local and free project implemented.
 This guide will help you set up the project by downloading Ollama, pulling the Mistral model, setting up a virtual environment, installing the required packages, setting the correct interpreter, and running the database population and querying process.
 
 ## Step 1: Download Ollama for Your OS
