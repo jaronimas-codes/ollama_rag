@@ -6,9 +6,9 @@ This guide will help you set up the project by downloading Ollama, pulling the M
 
 To get started, you need to download and install Ollama for your operating system. Follow the instructions on the official Ollama website:
 
-- [Ollama for macOS](https://ollama.com)
-- [Ollama for Windows](https://ollama.com)
-- [Ollama for Linux](https://ollama.com)
+- [Ollama for macOS](https://ollama.com/download)
+- [Ollama for Windows](https://ollama.com/download)
+- [Ollama for Linux](https://ollama.com/download)
 
 Ensure Ollama is properly installed and accessible via the terminal or command prompt.
 
@@ -18,7 +18,7 @@ Once Ollama is installed, you need to pull the `Mistral` model. Run the followin
 
 ```bash
 ollama pull mistral
-ollama pull nomic-embed-text
+ollama pull nomic-embed-texthw
 ```
 
 This will download and prepare the Mistral model for usage in your project.
