@@ -18,6 +18,7 @@ Once Ollama is installed, you need to pull the `Mistral` model. Run the followin
 
 ```bash
 ollama pull mistral
+ollama pull nomic-embed-text
 ```
 
 This will download and prepare the Mistral model for usage in your project.
