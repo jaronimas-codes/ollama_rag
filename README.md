@@ -63,9 +63,11 @@ This will install all the necessary packages for the project.
 
 In your development environment (e.g., VS Code or PyCharm), ensure that the interpreter is set to the Python interpreter inside your virtual environment (venv). This can usually be done through your IDE's settings under the "Python Interpreter" section.
 
-## Step 7: Add OpenAI API Key for Secure Data Use
+## (Optional) Step 7: Add OpenAI API Key for Secure Data Use
 
-For secure use of sensitive data like the OpenAI API key, you need to add the key to a .env file in the root of your project. Create a .env file and add the following:
+If you use OpenAIEmbeddings, then you need OpenAI API key
+For secure use of sensitive data like the OpenAI API key, you need to add the key to a .env file in the root of your project. 
+Create a .env file and add the following:
 
 ```bash
 OPENAI_API_KEY=your-openai-api-key-here
