@@ -92,8 +92,32 @@ This script will populate the database with the required data.
 Once the database is populated, you can query the data using the following command:
 
 ```bash
-python query_data.py
+python query_data.py "How get out of jail in monopoly?
 ```
 
 This script will run queries on the populated data and return results.
+
+## Step 9: Evaluate
+
+Once the database is populated with embeddings, you can query the data to evaluate the retrieval-augmented generation (RAG) system.
+
+To run the evaluation:
+
+1. Ensure that your database has been properly populated by following the previous steps to load documents into the Chroma vector store.
+2. Use the following command to run the test script and evaluate the queries:
+
+```bash
+python test_rag.py
+```
+This script will:
+
+- Query the populated Chroma database using predefined questions.
+- Compare the actual response from the model to the expected response.
+- Return whether the response matches the expected answer (either `true` or `false`).
+- Display the results along with the sources used for each query and time taken to respond.
+
+The results will be printed in the terminal, showing the evaluation process, response correctness, and sources used in the answer retrieval.
+
+Make sure the database is properly populated before running the test to ensure accurate results.
+
 
