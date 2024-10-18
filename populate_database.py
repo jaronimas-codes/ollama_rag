@@ -9,7 +9,8 @@ from langchain_chroma import Chroma  # Updated import
 
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "data"
+# DATA_PATH = "data"
+DATA_PATH = "data_compact"
 
 
 def main():
