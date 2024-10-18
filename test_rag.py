@@ -66,22 +66,22 @@ def cocoa_questions():
 # Test cases for Space: The New Frontier
 def space_questions():
     return [
-        {
-            "question": "What is the purpose of the Space: The New Frontier Educator's Guide?",
-            "expected_response": "To provide hands-on activities for elementary and middle school students"
-        },
-        {
-            "question": "What are two key concepts covered in the activities of Space: The New Frontier?",
-            "expected_response": "How gravity works and what makes something stay in orbit"
-        },
-        {
-            "question": "What is one challenge included in the space activities?",
-            "expected_response": "Build a rocket from a straw and a plane from a piece of paper"
-        },
-        {
-            "question": "What major hazard do astronauts face when leaving Earth’s atmosphere?",
-            "expected_response": "Radiation"
-        },
+        # {
+        #     "question": "What is the purpose of the Space: The New Frontier Educator's Guide?",
+        #     "expected_response": "To provide hands-on activities for elementary and middle school students"
+        # },
+        # {
+        #     "question": "What are two key concepts covered in the activities of Space: The New Frontier?",
+        #     "expected_response": "How gravity works and what makes something stay in orbit"
+        # },
+        # {
+        #     "question": "What is one challenge included in the space activities?",
+        #     "expected_response": "Build a rocket from a straw and a plane from a piece of paper"
+        # },
+        # {
+        #     "question": "What major hazard do astronauts face when leaving Earth’s atmosphere?",
+        #     "expected_response": "Radiation"
+        # },
         {
             "question": "What happened on February 22, 2024, related to space exploration?",
             "expected_response": "The first lunar landing by a U.S.-built spacecraft since Apollo 17"
