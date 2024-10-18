@@ -1,11 +1,11 @@
 import argparse
 import os
 import shutil
-from langchain.document_loaders import PyPDFDirectoryLoader  # Ensure this is correct for your version
+from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from get_embedding_function import get_embedding_function
-from langchain_chroma import Chroma  # Updated import
+from langchain_chroma import Chroma
 
 
 CHROMA_PATH = "chroma"
