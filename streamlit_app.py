@@ -49,10 +49,22 @@ def run_tests(questions):
         
         # Show a spinner while the test is running
         with st.spinner(f"Running test for question: {q['question']}"):
+            # Start timer to measure the query time
+            start_time = time.time()
+            
             # Run the query and validation
             result = query_and_validate(q['question'], q['expected_response'])
+            
+            # End timer
+            end_time = time.time()
+            time_taken = end_time - start_time
+            
+        # Display the response and additional info
+        st.write(f"**Response:** {result['actual_response']}")
+        st.write(f"Sources: {result.get('sources', 'No sources available')}")
+        st.write(f"Time taken: {time_taken:.2f} seconds")
         
-        st.write(f"**Actual Answer:** {result['actual_response']}")
+        # Show pass/fail result
         if result['result']:
             st.success("Test Passed")
         else:

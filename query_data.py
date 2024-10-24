@@ -7,15 +7,35 @@ from get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
 
+# ################################
+# ################################
+#           Template #1
+
+# PROMPT_TEMPLATE = """
+# Answer the question based only on the following context:
+
+# {context}
+
+# ---
+
+# Answer the question based on the above context: {question}
+# """
+
+# #################################
+# ################################
+#           Template #2
+
 PROMPT_TEMPLATE = """
-Answer the question based only on the following context:
+Based on the retrieved document, provide a detailed but concise answer to the following question:
 
 {context}
 
 ---
 
-Answer the question based on the above context: {question}
+{question}
 """
+
+################################
 
 
 def main():
@@ -40,6 +60,7 @@ def query_rag(query_text: str):
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
+    query_text = f"Provide a concise answer (1-2 sentences) to the following question.\n{query_text}"
     prompt = prompt_template.format(context=context_text, question=query_text)
 
     model = OllamaLLM(model="llama3.2:1b")
@@ -54,9 +75,9 @@ def query_rag(query_text: str):
     elapsed_time = end_time - start_time
 
     print(formatted_response)
-    print(f"Time taken: {elapsed_time:.2f} seconds")  # Display elapsed time
+    print(f"Time taken: {elapsed_time:.2f} seconds")
 
-    return response_text
+    return response_text, sources
 
 
 if __name__ == "__main__":
